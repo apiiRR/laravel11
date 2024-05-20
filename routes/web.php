@@ -10,6 +10,10 @@ Route::get('/blog', function () {
   return view('blog', ['title' => 'Blog']);
 });
 
+Route::get('/blog/{id}', function ($id) {
+  return view('blog', ['title' => 'Blog']);
+});
+
 Route::get('/about', function () {
   return view('about', ['title' => 'About']);
 });
