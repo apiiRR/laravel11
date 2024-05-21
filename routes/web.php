@@ -6,12 +6,12 @@ Route::get('/', function () {
     return view('home', ['title' => 'Home Page']);
 });
 
-Route::get('/blog', function () {
-  return view('blog', ['title' => 'Blog']);
+Route::get('/posts', function () {
+  return view('posts', ['title' => 'Posts']);
 });
 
-Route::get('/blog/{id}', function ($id) {
-  return view('blog', ['title' => 'Blog']);
+Route::get('/posts/{id}', function ($id) {
+  return view('post', ['title' => 'Post']);
 });
 
 Route::get('/about', function () {
